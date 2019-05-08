@@ -1,0 +1,17 @@
+type Desk @model @versioned {
+  id: ID!
+  isOccupied: Boolean!
+  rfid: String
+  temperature: Int!
+  light: Int!
+}
+
+type User @model {
+  id: ID!
+  name: String!
+}
+type RFID @model {
+  id: ID!
+  RFID: String!
+  user: User @connection
+}

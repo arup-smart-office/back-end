@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "arupsmartoffice",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognito3711ca75",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
